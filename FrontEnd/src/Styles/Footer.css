@@ -1,0 +1,18 @@
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 80px;
+    background-image: url('https://media.istockphoto.com/id/518253604/vector/business-and-shopping-icon-background.jpg?s=612x612&w=0&k=20&c=tu8i1OCKN5LX7QtjCUNnavKXE6jLn6xOtGgTRSIBs2I=');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #f8f9fa;
+  }
+  
