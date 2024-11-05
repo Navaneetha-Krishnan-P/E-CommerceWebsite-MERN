@@ -1,0 +1,257 @@
+
+.container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid steelblue;
+  padding: 0;
+  max-width: 100vw; 
+  overflow-x: hidden; 
+}
+
+input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  border: 1px solid steelblue;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: whitesmoke;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.5s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card button {
+  background-color: steelblue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+.filter-container {
+  margin: 10px 0 50px 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.filter-select {
+  padding: 12px;
+  border: 1px solid steelblue;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+}
+
+.modal-content {
+  width: 60%;
+  max-width: 1000px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  margin: 40px auto 0 auto;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url('https://media.istockphoto.com/id/518253604/vector/business-and-shopping-icon-background.jpg?s=612x612&w=0&k=20&c=tu8i1OCKN5LX7QtjCUNnavKXE6jLn6xOtGgTRSIBs2I=');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.modal-content img {
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.modal-content .close-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content .close-button:hover {
+  background-color: #c82333;
+}
+
+.buy-now-button {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.buy-now-button:hover {
+  background-color: #ff3d3d;
+}
+
+
+@media (max-width: 1024px) {
+  .modal-content {
+
+    width: 80%;
+    padding: 30px;
+  }
+
+  .modal-content img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .modal-content img {
+    height: 200px;
+  }
+
+  .modal-content h2 {
+    font-size: 20px;
+  }
+
+  .modal-content p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .modal-content img {
+    height: 180px;
+  }
+
+  .modal-content h2 {
+    font-size: 18px;
+  }
+
+  .modal-content p {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px; 
+  }
+
+  .card {
+    margin: 0 auto;
+    width: 90%; 
+  }
+}
+
+@media (max-width: 480px) {
+  input, .filter-select {
+    width: 70%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .card {
+    width: 85%; 
+  }
+}
+
+
+
+
+
+
