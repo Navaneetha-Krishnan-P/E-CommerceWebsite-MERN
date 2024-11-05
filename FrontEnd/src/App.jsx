@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/products', { params: { search, category } });
+        const res = await axios.get('https://e-commercewebsite-backend-mern.onrender.com/products', { params: { search, category } });
         setProducts(res.data);
       } catch (error) {
         console.error("Error fetching products:", error);
